@@ -134,7 +134,7 @@
 
 ### 安装FFMPEG
 
-        tar zxvf ffmpeg-4.2.4.tar.gz`
+        tar zxvf ffmpeg-4.2.4.tar.gz
         cd ffmpeg-4.2.4
         export PKG_CONFIG_PATH=/usr/local/cellar/ffmpeg_build/lib/pkgconfig
         CFLAGS="-fPIC -m64" ./configure --prefix=/usr/local/cellar/ffmpeg --enable-libx264 --enable-libfdk_aac --enable-gpl --enable-nonfree --enable-libvorbis --enable-libopus --enable-libmp3lame --enable-libfreetype --enable-pthreads  --enable-pic  --enable-bzlib --enable-zlib --enable-version3 --bindir=/usr/bin --extra-cflags="-I/usr/local/cellar/ffmpeg_build/include" --extra-ldflags="-L/usr/local/cellar/ffmpeg_build/lib"  --pkg-config-flags="--static"`
