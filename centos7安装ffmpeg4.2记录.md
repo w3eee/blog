@@ -72,7 +72,7 @@
 - Lame
 
         tar zxvf lame-3.99.5.tar.gz
-        cd tar zxvf lame-3.99.5
+        cd lame-3.99.5
         ./configure --prefix=/usr/local/cellar/ffmpeg_build --bindir=/usr/bin --disable-shared --enable-nasm
         make && make install
 
@@ -152,6 +152,15 @@
             /usr/local/cellar/ffmpeg_build/lib
 
         执行 ldconfig
+        
+        
+- 如果x264在编译安装时提示错误： Minimum version is nasm-2.13，则需要先安装nasm：
+
+        wget "http://www.nasm.us/pub/nasm/releasebuilds/2.13.01/nasm-2.13.01.tar.xz"
+        tar xvf nasm-2.13.01.tar.xz
+        cd nasm-2.13.01
+        ./configure
+        make&make install
 
 
 #### 参考: 
